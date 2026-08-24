@@ -15,35 +15,6 @@ if (menuToggle && mobileMenu) {
   });
 }
 
-const countdownDate = new Date('2026-06-12T00:00:00-07:00').getTime();
-const ids = ['days', 'hours', 'minutes', 'seconds'];
-
-function updateCountdown() {
-  const now = Date.now();
-  const distance = countdownDate - now;
-  if (distance <= 0) {
-    ids.forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.textContent = '00';
-    });
-    return;
-  }
-
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((distance / (1000 * 60)) % 60);
-  const seconds = Math.floor((distance / 1000) % 60);
-  const values = [days, hours, minutes, seconds];
-
-  ids.forEach((id, i) => {
-    const el = document.getElementById(id);
-    if (el) el.textContent = String(values[i]).padStart(2, '0');
-  });
-}
-
-updateCountdown();
-setInterval(updateCountdown, 1000);
-
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const inquiryForm = document.getElementById('inquiryForm');

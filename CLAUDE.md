@@ -53,6 +53,9 @@ The site is being repositioned from a nightly holiday-let toward **mid-term and 
 5. **Do not add analytics, trackers, cookie banners, chat widgets or third-party scripts** without asking. The site is deliberately fast and private.
 6. **Do not introduce a framework, a build step, or npm.** Plain HTML, CSS and JavaScript only. He must be able to read and repair this site himself.
 7. **Keep it accessible and mobile-first.** Most enquiries arrive on a phone.
+8. **Never publish a full surname or a third-party telephone number.** Testimonials and references on the site are first name and initial only. Reference contact details stay in the emailed packet and never reach the website.
+9. **Never publish a legal-entity name on the site.** No LLC, no ownership structure. It invites questions that belong in a lease, not on a web page.
+10. **Do not advertise a maximum tenancy length.** The rate card may show a longest priced term; the site must not state a ceiling. See outstanding item 5.
 
 ---
 
@@ -82,16 +85,40 @@ Straight-line distances from 10823 Whipple St (34.1483206, −118.3655278), comp
 
 **LA28 dates (verified, la28.org):** Olympic Games 14–30 July 2028. Paralympic Games 15–27 August 2028. Olympic squash is at Courthouse Square on the Universal Studios lot. The Sepulveda Basin is the Valley Zone, hosting BMX, skateboarding, modern pentathlon and 3x3 basketball.
 
+**Monthly rate card** (Ambar-supplied, Executive Housing Packet V3, 23 August 2026):
+
+| Term | Monthly rate |
+|---|---|
+| 30-89 days | $4,250 |
+| 3 months | $4,000 |
+| 6 months | $3,750 |
+| 11 months | $3,500 |
+
+Security deposit equal to one month's rent, held per California law. Utilities included up to $100 per month. Minimum term 30 days. Available from 1 October 2026. 741 sq ft. Two adults. Ample free street parking. Self check-in. W-9 and certificate of insurance issued together. Written quote within one business day.
+
+**Preferential rate for nurses, healthcare staff and first responders.** Advertised on the site in three places (top banner, booking panel, `#corporate` section). **No figure is published and none has been set** — it is quoted case by case and negotiated. Do not invent a percentage or a dollar amount. Context: the published 3-month rate of $4,000 sits above the LA travel-nurse furnished band of roughly $2,200-$3,500/month, so this segment is expected to negotiate.
+
+**Nightly pricing was retired from the site on 23 August 2026.** Do not reintroduce it before the date in DATED REMINDERS below.
+
 **Contact:** booking@reddoor3.com · +1 323 896 3696 (call, SMS, WhatsApp)
 
 ---
 
 ## KNOWN OUTSTANDING WORK
 
-1. **`script.js` countdown fails after its target date.** The `if (distance <= 0)` branch writes `00` and never recovers. Target is currently 14 July 2028. This must be rewritten before then — see Hard Rule 4.
-2. **The site has no monthly rate card.** It shows nightly pricing only. A corporate rate card is needed once Ambar supplies the figures.
-3. **Parking is described as "free street parking".** If dedicated parking is ever secured, this is the highest-value copy change on the site for corporate buyers.
-4. **No corporate enquiry path.** The form's "Purpose of stay" list includes relocation, but there is no dedicated corporate or extended-stay section.
+1. **RESOLVED 23 Aug 2026.** The `script.js` countdown that wrote `00` forever was deleted with its section. No countdown exists on the site. Hard Rule 4 still applies if one is ever reintroduced.
+2. **RESOLVED 23 Aug 2026.** Monthly rate card published in the booking panel. Figures in VERIFIED FACTS above.
+3. **Parking is "ample free street parking".** If dedicated parking is ever secured, this remains the highest-value copy change on the site for corporate buyers.
+4. **PARTLY RESOLVED 23 Aug 2026.** The `#corporate` section and the monthly panel now carry the corporate path. The enquiry form's "Purpose of stay" list has not been revisited and still reads like a holiday-let form.
+5. **Tenancy structure is unresolved and needs a California landlord-tenant attorney.** Open questions: does holding the property in an LLC forfeit the AB 1482 single-family exemption; does the City of Los Angeles just-cause ordinance apply here and from what point; does a corporate-tenant-of-record structure change either answer. Until these are answered the site advertises no maximum tenancy. Note for that conversation: a mortgage lender holds a lien, not title — whoever is on the deed is the legal owner.
+6. **Five dead World Cup landing pages** (`brazil-fans-la-private-retreat`, `england-fans-world-cup-la-rental`, `los-angeles-world-cup-accommodation`, `mexico-fans-world-cup-los-angeles-stay`, `world-cup-stay-near-universal-studios`) are still advertised to search engines in `sitemap.xml`. Task Brief 002.
+7. **Around twenty landing pages still sell short stays** while the site now carries a 30-day minimum. They advertise something not currently offered and need reconciling.
+
+---
+
+## DATED REMINDERS
+
+- **14 March 2028 — bring back the event pricing panel.** The nightly early-bird banner and the nightly booking card were retired on 23 August 2026 and should return roughly four months before the Olympic Games open on 14 July 2028. The retired wording is recoverable from git history, in the commit that introduced the monthly rate card.
 
 ---
 

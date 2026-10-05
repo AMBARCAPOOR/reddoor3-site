@@ -23,6 +23,7 @@ There is no staging site. Treat every change as production.**
 | `assets/` | Photographs and logo. |
 | `andaazan.html` | The Andaazan supper-club page, served at `/andaazan`. Separate product, separate page. |
 | `_config.yml` | Tells GitHub Pages which files NOT to publish. Keep `CLAUDE.md` in its exclude list. |
+| `404.html` | Shown for any URL that does not exist. Offers the residence and Andaazan. |
 | `ANDAAZAN_EDITING_NOTES.md` | Plain-English instructions for Ambar to change the Andaazan price and dates. Not published. |
 
 ---
@@ -118,7 +119,7 @@ Security deposit equal to one month's rent, held per California law. Utilities i
 3. **Parking is "ample free street parking".** If dedicated parking is ever secured, this remains the highest-value copy change on the site for corporate buyers.
 4. **PARTLY RESOLVED 23 Aug 2026.** The `#corporate` section and the monthly panel now carry the corporate path. The enquiry form's "Purpose of stay" list has not been revisited and still reads like a holiday-let form.
 5. **Tenancy structure is unresolved and needs a California landlord-tenant attorney.** Open questions: does holding the property in an LLC forfeit the AB 1482 single-family exemption; does the City of Los Angeles just-cause ordinance apply here and from what point; does a corporate-tenant-of-record structure change either answer. Until these are answered the site advertises no maximum tenancy. Note for that conversation: a mortgage lender holds a lien, not title — whoever is on the deed is the legal owner.
-6. **Five dead World Cup landing pages** (`brazil-fans-la-private-retreat`, `england-fans-world-cup-la-rental`, `los-angeles-world-cup-accommodation`, `mexico-fans-world-cup-los-angeles-stay`, `world-cup-stay-near-universal-studios`) are still advertised to search engines in `sitemap.xml`. Task Brief 002.
+6. **RESOLVED 5 Oct 2026 (Task Brief 002).** The five dead World Cup landing pages were deleted and their `sitemap.xml` entries removed. The 2026 tournament ended 19 July 2026, nothing on the site linked to them, and the content was generic. A branded `404.html` was added so any old inbound link lands on a real page offering the residence and Andaazan rather than a GitHub error.
 7. **Around twenty landing pages still sell short stays** while the site now carries a 30-day minimum. They advertise something not currently offered and need reconciling.
 
 ---

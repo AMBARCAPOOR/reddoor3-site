@@ -55,7 +55,8 @@ The site is being repositioned from a nightly holiday-let toward **mid-term and 
 7. **Keep it accessible and mobile-first.** Most enquiries arrive on a phone.
 8. **Never publish a full surname or a third-party telephone number.** Testimonials and references on the site are first name and initial only. Reference contact details stay in the emailed packet and never reach the website.
 9. **Never publish a legal-entity name on the site.** No LLC, no ownership structure. It invites questions that belong in a lease, not on a web page.
-10. **Do not advertise a maximum tenancy length.** The rate card may show a longest priced term; the site must not state a ceiling. See outstanding item 5.
+10. **Never write the street address, postcode or GPS coordinates into any file in this repository.** This repository is public on GitHub and its history is readable. The property is "North Hollywood, Los Angeles" and nothing more specific. The Google Maps pin on the homepage is an unlabelled coordinate and is the only location pointer permitted.
+11. **Do not advertise a maximum tenancy length.** The rate card may show a longest priced term; the site must not state a ceiling. See outstanding item 5.
 
 ---
 

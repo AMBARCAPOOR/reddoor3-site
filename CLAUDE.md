@@ -21,6 +21,9 @@ There is no staging site. Treat every change as production.**
 | `script.js` | Menu toggle, countdown timer, footer year. |
 | `CNAME` | Contains `reddoor3.com`. **Never delete or edit this — it is what points the domain at this repo.** |
 | `assets/` | Photographs and logo. |
+| `andaazan.html` | The Andaazan supper-club page, served at `/andaazan`. Separate product, separate page. |
+| `_config.yml` | Tells GitHub Pages which files NOT to publish. Keep `CLAUDE.md` in its exclude list. |
+| `ANDAAZAN_EDITING_NOTES.md` | Plain-English instructions for Ambar to change the Andaazan price and dates. Not published. |
 
 ---
 
@@ -64,6 +67,7 @@ The site is being repositioned from a nightly holiday-let toward **mid-term and 
 
 - **LA28 / Olympic content:** the words "Olympic", "Olympics" and "LA28" are protected marks in the United States and RedDoor3 is not a sponsor. Any section referencing the Games must keep the non-affiliation disclaimer that is already in `index.html`. Do not add Olympic rings, LA28 logos, or wording that implies partnership.
 - **Universal Studios, Warner Bros., Disney, NBCUniversal, Providence:** may be named factually as nearby employers and landmarks. Never imply affiliation, endorsement, or an accommodation partnership.
+- **ANDAAZAN / home kitchen (MEHKO permit PR0366245):** the footer compliance block on `andaazan.html` — "Made in a Home Kitchen", the permit number, and the LA County Public Health line — is required on anything advertising the food. It must stay visible, as plain text, never an image or behind a toggle. **Banned words anywhere on that page:** "catering", "caterer", "we cater", "private event", "book us for your party" — a home kitchen permit does not allow advertising as a caterer. Say "book the table". No alcohol may be served or permitted, and no alcohol imagery.
 - **Guest testimonials:** the site carries first-name-and-city reviews. Do not upgrade them to look like corporate references or invent job titles for them.
 
 ---
@@ -101,6 +105,8 @@ Security deposit equal to one month's rent, held per California law. Utilities i
 
 **Nightly pricing was retired from the site on 23 August 2026.** Do not reintroduce it before the date in DATED REMINDERS below.
 
+**ANDAAZAN (supper club), as published 4 October 2026:** $500 for the whole table (four seats), or $125 for a single seat with strangers seated together; Ambar closes the table once four are in. Dates Saturday 7 November 2026 and Sunday 8 November 2026, both 7:00 PM. **The Diwali table on 8 November is a special Diwali vegetarian menu.** Full payment on booking. Full refund over 48 hours before; no refund inside 48 hours. Indian family food, not Punjabi. Menu arc: apps, dinner, sweets, chai. MEHKO permit PR0366245. Spice level is chosen by the guest in the request form — Mild / Medium / Hot / "However you would cook it for yourself" — and the FAQ says so. Price and dates live in one block in `andaazan.html` — see `ANDAAZAN_EDITING_NOTES.md`.
+
 **Contact:** booking@reddoor3.com · +1 323 896 3696 (call, SMS, WhatsApp)
 
 ---
@@ -114,6 +120,11 @@ Security deposit equal to one month's rent, held per California law. Utilities i
 5. **Tenancy structure is unresolved and needs a California landlord-tenant attorney.** Open questions: does holding the property in an LLC forfeit the AB 1482 single-family exemption; does the City of Los Angeles just-cause ordinance apply here and from what point; does a corporate-tenant-of-record structure change either answer. Until these are answered the site advertises no maximum tenancy. Note for that conversation: a mortgage lender holds a lien, not title — whoever is on the deed is the legal owner.
 6. **Five dead World Cup landing pages** (`brazil-fans-la-private-retreat`, `england-fans-world-cup-la-rental`, `los-angeles-world-cup-accommodation`, `mexico-fans-world-cup-los-angeles-stay`, `world-cup-stay-near-universal-studios`) are still advertised to search engines in `sitemap.xml`. Task Brief 002.
 7. **Around twenty landing pages still sell short stays** while the site now carries a 30-day minimum. They advertise something not currently offered and need reconciling.
+
+---
+
+8. **Andaazan page carries no social proof at all.** No photographs of a table, no guest quotes. Real ones are due after the first table on 18 October 2026. Until then the page asks a stranger for $500 with nothing to show.
+9. **Andaazan: the primary-residence question is operational, not resolved on paper.** Ambar states the rental and the supper club never run concurrently — if the unit is let, Andaazan stops for the tenancy. The County has not confirmed whether a periodically-let unit satisfies the MEHKO primary-residence rule. Still on his list to ask.
 
 ---
 

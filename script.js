@@ -15,7 +15,8 @@ if (menuToggle && mobileMenu) {
   });
 }
 
-document.getElementById('year').textContent = new Date().getFullYear();
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 const inquiryForm = document.getElementById('inquiryForm');
 const copySummaryBtn = document.getElementById('copySummary');
@@ -59,6 +60,48 @@ if (copySummaryBtn) {
       setTimeout(() => { copySummaryBtn.textContent = 'Copy Booking Summary'; }, 1600);
     } catch {
       alert('Could not copy. Please try again.');
+    }
+  });
+}
+
+/* ---------------------------------------------------------------
+   ANDAAZAN (andaazan.html) - table request form.
+   Same approach as the rental form: opens the visitor's email client
+   with everything filled in. Nothing is sent to or stored on a server.
+   --------------------------------------------------------------- */
+const andaazanForm = document.getElementById('andaazanForm');
+
+if (andaazanForm) {
+  andaazanForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const val = id => (document.getElementById(id)?.value || '').trim();
+    const nl = '%0D%0A';
+
+    const body = [
+      'Hello Guruji,', '',
+      "I'd like to request the Andaazan table.", '',
+      'Name: ' + val('aName'),
+      'Email: ' + val('aEmail'),
+      'Phone / WhatsApp: ' + val('aPhone'),
+      'Guests: ' + val('aGuests'),
+      'Preferred date: ' + val('aDate'),
+      'Spice level: ' + val('aSpice'), '',
+      'Allergies & dietary restrictions:',
+      val('aDiet') || 'None given', '',
+      'Occasion: ' + (val('aOccasion') || 'Not given'),
+      'How they heard: ' + (val('aSource') || 'Not given'), '',
+      'Anything else:',
+      val('aNotes') || 'Nothing further', '',
+      'Confirmed: understands no alcohol is served or permitted.'
+    ].map(encodeURIComponent).join(nl);
+
+    const subject = encodeURIComponent('Andaazan table request');
+    window.location.href = 'mailto:booking@reddoor3.com?subject=' + subject + '&body=' + body;
+
+    const status = document.getElementById('aStatus');
+    if (status) {
+      status.textContent = "Got it. I'll come back to you within a day with the menu and the details. - Ambar";
     }
   });
 }

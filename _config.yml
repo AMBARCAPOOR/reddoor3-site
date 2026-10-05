@@ -1,0 +1,13 @@
+# Site configuration for GitHub Pages.
+#
+# "exclude" = files that live in this repository but must NOT be published
+# to reddoor3.com. Anything listed here stops being reachable as a URL.
+#
+# CLAUDE.md is internal working notes. It was being served at
+# https://reddoor3.com/CLAUDE.md until 04/10/2026.
+exclude:
+  - CLAUDE.md
+  - README.md
+  - _config.yml
+  - .claude/
+  - ANDAAZAN_EDITING_NOTES.md

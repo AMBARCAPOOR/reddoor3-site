@@ -9,7 +9,8 @@
   --brand: #9e180f;
   --brand-dark: #7d0e08;
   --brand-soft: #b64430;
-  --gold: #d6a24c;
+  --gold: #d6a24c;        /* light gold - only on the dark hero overlay */
+  --gold-ink: #8a5f18;    /* 4.97:1 on cream - for light backgrounds */
   --shadow: 0 20px 50px rgba(43, 27, 22, 0.08);
   --radius: 26px;
   --radius-sm: 18px;
@@ -167,7 +168,7 @@ p { margin: 0 0 14px; }
 .eyebrow {
   display: inline-block;
   margin-bottom: 14px;
-  color: var(--gold);
+  color: var(--gold-ink);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.18em;
@@ -304,7 +305,7 @@ p { margin: 0 0 14px; }
   justify-content: center;
 }
 .stars {
-  color: var(--gold) !important;
+  color: var(--gold-ink) !important;
   font-size: 1.4rem;
   letter-spacing: 0.14em;
   margin-bottom: 14px;
@@ -458,7 +459,7 @@ textarea { resize: vertical; }
 }
 .inline-quote-grid .inline-quote-card p { color: var(--text) !important; }
 .inline-quote-grid .inline-quote-card span { color: var(--brand) !important; }
-.inline-quote-grid .inline-quote-card .stars { color: var(--gold) !important; }
+.inline-quote-grid .inline-quote-card .stars { color: var(--gold-ink) !important; }
 
 @media (max-width: 1100px) {
   .benefits-grid, .trust-grid { grid-template-columns: repeat(2, 1fr); }
@@ -486,3 +487,7 @@ textarea { resize: vertical; }
   .feature-strip span, .badge-row span, .hero-points span, .micro-trust span { width: auto; }
   .sticky-book { right: 12px; bottom: 12px; padding: 14px 18px; }
 }
+
+/* The hero eyebrow sits on a dark photo overlay, so it keeps the light gold.
+   Everywhere else the eyebrow is on cream and uses --gold-ink for contrast. */
+.hero .eyebrow { color: var(--gold); }

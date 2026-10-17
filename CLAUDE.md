@@ -355,12 +355,16 @@ recorded. See outstanding item 13.
    [STATED, Guruji, 16 Oct 2026], so the published dates of Saturday 7 and Sunday 8 November
    2026 are deliverable. **This also unblocks the whole sequence** — Andaazan can run now.
    Re-check before publishing any further date: a let month is a month the kitchen is closed.
-9. **Enquiry capture — the highest-value remaining build.** Both forms open the visitor's
-   email client and **store nothing**. An abandoned email is a lost enquiry and no list is
-   being built. Routes: A (current, free, captures nothing) / B (Formspree, Netlify Forms or
-   Basin — free tiers exist [UNVERIFIED, limits not checked]) / C (Google Form into a Google
-   Sheet — native to his stack, free, builds the waitlist). **Recommendation: C.** Done when
-   a test submission appears in a sheet he can open on his phone.
+9. **DECIDED 16 Oct 2026 — Route A stays. Do not re-propose B or C.** [STATED] Ambar
+   declined stored enquiry capture: he does not want the privacy, storage and regulatory
+   obligations that come with holding personal data. Both forms will continue to open the
+   visitor's own email client and store nothing.
+   **Accepted consequences:** an enquiry abandoned before the email is sent is lost, and no
+   waitlist is being built, so the Block D "offer the first paid date to the waitlist" step
+   has no list to offer it to. Marketing that depends on a list must be re-planned around
+   Instagram, Nextdoor and direct messaging instead.
+   **Benefit, and it is real:** nothing is stored, so there is no database to secure, no
+   processor agreement, no breach exposure and no deletion requests.
 10. **The handoff document is not in this repository.** It contains personal financial figures
     and the repo is public. Options: make the repo private (GitHub Pages on a private repo
     generally needs a paid plan — check before switching or the site goes dark), split the
@@ -381,9 +385,23 @@ recorded. See outstanding item 13.
     months Andaazan runs. Everything downstream depends on it.
 16. **`/table` and `/book` do not exist** — both return 404. [READ 10/16/2026] GitHub Pages
     cannot redirect; they would have to be meta-refresh stub files. Deliberately not built.
-17. **Site-wide polish not yet done:** no favicon on any page; social preview image on only
-    2 of 13 pages; no privacy policy or terms page; gold `#d6a24c` on cream fails colour
-    contrast at 2.03:1 (everything else passes). [READ 10/16/2026]
+17. **MOSTLY RESOLVED 16 Oct 2026.** Favicon added to all 13 pages (`favicon.ico` plus 32px
+    and 192px PNGs, generated from the logo; no `apple-touch-icon`, per Environment law).
+    Social preview tags added to the 10 landing pages, so all 12 indexed pages now preview
+    with an image when shared. Colour contrast fixed: `--gold` (#d6a24c, 2.03:1 on cream)
+    was failing on `.eyebrow`, which is meaningful text. A second token `--gold-ink`
+    (#8a5f18, **4.97:1**) now serves `.eyebrow` and `.stars` on light backgrounds, while
+    `.hero .eyebrow` keeps the light gold because it sits on a dark photo overlay —
+    darkening it globally would have made the hero worse. [READ 16/10/2026]
+
+    **Still open: no privacy policy or terms page.** Position as of 16 Oct 2026, following
+    the item 9 decision: the site stores nothing, sets no cookies, runs no analytics and
+    uses no third-party processor. Enquiries travel from the visitor's own email client to
+    his inbox. On that basis a privacy policy looks like good practice rather than a legal
+    requirement at this scale — the CCPA business thresholds are not met. **This is not
+    legal advice.** Three things would change the answer and must trigger a rethink:
+    adding analytics or any tracker, adding a form that stores submissions anywhere, or
+    taking payment on the site.
 
 ---
 

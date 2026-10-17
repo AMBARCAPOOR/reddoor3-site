@@ -110,8 +110,18 @@ the dumbest solution first.
 
 ## ENVIRONMENT LAW
 
-Windows, Android and Google stack only. No Apple formats, no Microsoft Office formats. Every
+**Clarified 16 Oct 2026 — the distinction is who consumes the output.** [STATED]
+
+**Things Ambar himself opens** — documents, notes, scripts, tooling, anything produced for
+him to read or run: **Windows, Android and Google stack only.** No Apple formats, no
+Microsoft Office formats. That is his operating environment and his constraint. Every such
 output must open cleanly in Google Workspace, Windows and Android.
+
+**Things the public sees** — the website and anything else outward-facing: **optimise for
+every major environment, Apple included.** His own platform limits are not the visitors'
+limits. That means Safari and iOS get the same care as Chrome and Android: `-webkit-`
+prefixes where Safari needs them, `apple-touch-icon`, and anything else a major browser
+requires. Treating iPhone visitors as second class costs enquiries.
 
 All printable output must be black-and-white safe — no information carried by colour.
 
@@ -335,8 +345,9 @@ recorded. See outstanding item 13.
 1. **RESOLVED 23 Aug 2026.** The `script.js` countdown that wrote `00` forever was deleted
    with its section. Hard Rule 4 still applies if one is ever reintroduced.
 2. **RESOLVED 23 Aug 2026.** Monthly rate card published in the booking panel.
-3. **Parking is "ample free street parking".** If dedicated parking is ever secured, this
-   remains the highest-value copy change on the site for corporate buyers.
+3. **CLOSED 16 Oct 2026.** No dedicated parking, and none expected. [STATED] The site says
+   "ample free street parking" and that stays. Reopen only if a dedicated space is ever
+   secured — it would be the highest-value copy change on the site for corporate buyers.
 4. **PARTLY RESOLVED 23 Aug 2026.** The `#corporate` section and the monthly panel carry the
    corporate path. The enquiry form's "Purpose of stay" list still reads like a holiday-let
    form.
@@ -377,12 +388,16 @@ recorded. See outstanding item 13.
     price and the form, reusing the homepage star-rating component. **Do not move the
     Anjali M. homepage review without written confirmation it refers to his cooking.**
     [UNVERIFIED]
-13. **County answer provenance.** Officer name and call date not recorded. The answers stand;
-    the provenance is thin.
+13. **PARTLY ANSWERED 16 Oct 2026.** The County officer who gave the three answers was
+    **Lisa** at LA County Department of Public Health. [STATED] Surname and call date still
+    not recorded. Good enough to proceed; if a dispute ever arises, the call would need to
+    be made again and logged properly.
 14. **The building's governing documents have not been read** for a home-based-business
     clause. He has direct access to them. [STATED, unresolved]
-15. **The cooking-versus-letting calendar is not set.** Which months the unit is let and which
-    months Andaazan runs. Everything downstream depends on it.
+15. **CLOSED 16 Oct 2026.** Ambar manages the cooking-versus-letting calendar manually.
+    [STATED] There is no shared calendar and none is wanted. **Before publishing any new
+    dinner date, ask him whether the unit is free across it** — the two uses cannot overlap,
+    and he is the only record of which is which.
 16. **`/table` and `/book` do not exist** — both return 404. [READ 10/16/2026] GitHub Pages
     cannot redirect; they would have to be meta-refresh stub files. Deliberately not built.
 17. **MOSTLY RESOLVED 16 Oct 2026.** Favicon added to all 13 pages (`favicon.ico` plus 32px
@@ -393,6 +408,16 @@ recorded. See outstanding item 13.
     (#8a5f18, **4.97:1**) now serves `.eyebrow` and `.stars` on light backgrounds, while
     `.hero .eyebrow` keeps the light gold because it sits on a dark photo overlay —
     darkening it globally would have made the hero worse. [READ 16/10/2026]
+
+    **Apple and cross-platform work, 16 Oct 2026.** `apple-touch-icon` (180x180, opaque —
+    iOS composites transparent PNGs onto black), `site.webmanifest` with 192 and 512 icons,
+    and `theme-color` on the six landing pages that lacked it; all 13 pages now carry the
+    full set. Two real Safari bugs fixed in `style.css`: `-webkit-backdrop-filter`, without
+    which the sticky header had **no blur at all on any iPhone**, and
+    `-webkit-text-size-adjust: 100%`, which stops iOS inflating text in landscape. Form
+    inputs were already 16px, so iOS does not zoom on focus. **Not tested on real Safari
+    hardware** — these are known-good fixes applied from the source, not verified on a
+    device. [UNVERIFIED on device]
 
     **Still open: no privacy policy or terms page.** Position as of 16 Oct 2026, following
     the item 9 decision: the site stores nothing, sets no cookies, runs no analytics and

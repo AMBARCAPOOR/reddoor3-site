@@ -1,0 +1,13 @@
+{
+  "name": "RedDoor3 — Private Hollywood Retreat",
+  "short_name": "RedDoor3",
+  "description": "A furnished one-bedroom executive residence in North Hollywood, Los Angeles.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f5f0ea",
+  "theme_color": "#7d0e08",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

@@ -348,9 +348,18 @@ recorded. See outstanding item 13.
 3. **CLOSED 16 Oct 2026.** No dedicated parking, and none expected. [STATED] The site says
    "ample free street parking" and that stays. Reopen only if a dedicated space is ever
    secured — it would be the highest-value copy change on the site for corporate buyers.
-4. **PARTLY RESOLVED 23 Aug 2026.** The `#corporate` section and the monthly panel carry the
-   corporate path. The enquiry form's "Purpose of stay" list still reads like a holiday-let
-   form.
+4. **RESOLVED 16 Oct 2026.** The rental enquiry form was rewritten for a corporate buyer.
+   Gone: "Check-in"/"Check-out" as two required exact dates (nobody placing a three-month
+   assignment knows an end date), "Guests", and the holiday options "Couples getaway",
+   "Sports event travel" and "Creative work trip". Also removed the surviving nightly-let
+   line promising "early bird pricing if available".
+   Now: **Move-in date** and **Term length** (30-89 days / 3 / 6 / 11 months / longer or
+   not sure) matching the rate card bands; **Occupants**; a **Purpose** list of corporate
+   relocation, production placement, travelling healthcare on a 13-week contract, corporate
+   housing operator, extended work assignment, personal or other; plus two optional
+   corporate fields, **Company** and **Who will be the tenant of record?**
+   *Hard Rule 18 says do not touch rental content. That rule exists to stop Andaazan work
+   disturbing the rental; this change was requested directly and is the rental's own form.*
 5. **Tenancy structure needs a California landlord-tenant attorney.** Does holding the
    property in an LLC forfeit the AB 1482 single-family exemption; does the City of Los
    Angeles just-cause ordinance apply and from when; does a corporate-tenant-of-record

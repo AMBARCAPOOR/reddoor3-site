@@ -468,9 +468,9 @@
     <section class="section inquiry-section" id="inquiry">
       <div class="container inquiry-grid">
         <div>
-          <span class="eyebrow">Request availability</span>
-          <h2>Tell us a little about your stay.</h2>
-          <p>Share your dates, guest count, and reason for travel. If the stay is a fit, you will receive a private quote, early bird pricing if available, and next steps directly.</p>
+          <span class="eyebrow">Request a monthly quote</span>
+          <h2>Tell us what you need.</h2>
+          <p>Your move-in date, how long you need it, and who it is for. If it is a fit, you will receive a written quote within one business day &mdash; the monthly rate for your term, the deposit, and what is included.</p>
 
           <div class="contact-card">
             <a href="mailto:booking@reddoor3.com">booking@reddoor3.com</a>
@@ -498,51 +498,74 @@
               <input type="text" id="guestPhone" required>
             </label>
             <label>
-              Guests
-              <select id="guestCount" required>
+              Company <span class="form-optional">optional</span>
+              <input type="text" id="company" placeholder="If an employer is placing someone">
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Move-in date <span class="form-optional">approximate is fine</span>
+              <input type="date" id="moveIn" required>
+            </label>
+            <label>
+              Term length
+              <select id="termLength" required>
                 <option value="">Select</option>
-                <option value="1">1 guest</option>
-                <option value="2">2 guests</option>
+                <option>30 to 89 days</option>
+                <option>3 months</option>
+                <option>6 months</option>
+                <option>11 months</option>
+                <option>Longer, or not sure yet</option>
               </select>
             </label>
           </div>
 
           <div class="form-row">
             <label>
-              Check-in
-              <input type="date" id="checkin" required>
+              Occupants
+              <select id="occupants" required>
+                <option value="">Select</option>
+                <option value="1">1 occupant</option>
+                <option value="2">2 occupants</option>
+              </select>
             </label>
             <label>
-              Check-out
-              <input type="date" id="checkout" required>
-            </label>
-          </div>
-
-          <div class="form-row single">
-            <label>
-              Purpose of stay
+              Purpose
               <select id="stayPurpose" required>
                 <option value="">Select</option>
-                <option>Executive / studio travel</option>
-                <option>Couples getaway</option>
-                <option>Sports event travel</option>
-                <option>Relocation / furnished stay</option>
-                <option>Creative work trip</option>
-                <option>Other</option>
+                <option>Corporate relocation</option>
+                <option>Production placement</option>
+                <option>Travelling healthcare, 13-week contract</option>
+                <option>Corporate housing operator</option>
+                <option>Extended work assignment</option>
+                <option>Personal or other</option>
               </select>
             </label>
           </div>
 
           <div class="form-row single">
             <label>
-              Tell us about your stay
-              <textarea id="message" rows="5" placeholder="Share anything helpful, including arrival timing, special requests, or whether you would like add-ons such as stocked fridge or late checkout."></textarea>
+              Who will be the tenant of record? <span class="form-optional">optional</span>
+              <select id="tenantOfRecord">
+                <option value="">Select</option>
+                <option>The employer or company</option>
+                <option>The individual occupant</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-row single">
+            <label>
+              Anything else
+              <textarea id="message" rows="5" placeholder="Anything that helps - the department or employer, flexibility on dates, parking needs, or what the occupant needs from the place."></textarea>
             </label>
           </div>
 
           <div class="form-actions">
-            <button type="submit" class="btn btn-primary btn-large">Send Inquiry</button>
-            <button type="button" class="btn btn-outline btn-large" id="copySummary">Copy Booking Summary</button>
+            <button type="submit" class="btn btn-primary btn-large">Request a Quote</button>
+            <button type="button" class="btn btn-outline btn-large" id="copySummary">Copy Summary</button>
           </div>
 
           <p class="form-note">Submitting opens your email app with the inquiry prefilled. This keeps the site simple, fast, and direct while preserving privacy.</p>

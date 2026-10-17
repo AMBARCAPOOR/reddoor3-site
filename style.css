@@ -496,3 +496,11 @@ textarea { resize: vertical; }
 /* The hero eyebrow sits on a dark photo overlay, so it keeps the light gold.
    Everywhere else the eyebrow is on cream and uses --gold-ink for contrast. */
 .hero .eyebrow { color: var(--gold); }
+
+/* Small grey hint beside a field label, e.g. "optional". */
+.form-optional {
+  font-weight: 400;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-left: 6px;
+}

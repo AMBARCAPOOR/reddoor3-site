@@ -30,22 +30,30 @@ if (telegramLink) {
 }
 
 function buildInquiryText() {
-  const guestName = document.getElementById('guestName')?.value || '';
-  const guestEmail = document.getElementById('guestEmail')?.value || '';
-  const guestPhone = document.getElementById('guestPhone')?.value || '';
-  const guestCount = document.getElementById('guestCount')?.value || '';
-  const checkin = document.getElementById('checkin')?.value || '';
-  const checkout = document.getElementById('checkout')?.value || '';
-  const stayPurpose = document.getElementById('stayPurpose')?.value || '';
-  const message = document.getElementById('message')?.value || '';
+  const val = id => (document.getElementById(id)?.value || '').trim();
+  const nl = '%0D%0A';
 
-  return `Hello Guruji,%0D%0A%0D%0AI'd like to inquire about RedDoor3.%0D%0A%0D%0AName: ${encodeURIComponent(guestName)}%0D%0AEmail: ${encodeURIComponent(guestEmail)}%0D%0APhone / WhatsApp: ${encodeURIComponent(guestPhone)}%0D%0AGuests: ${encodeURIComponent(guestCount)}%0D%0ACheck-in: ${encodeURIComponent(checkin)}%0D%0ACheck-out: ${encodeURIComponent(checkout)}%0D%0APurpose of stay: ${encodeURIComponent(stayPurpose)}%0D%0A%0D%0AAbout the stay:%0D%0A${encodeURIComponent(message)}`;
+  return [
+    'Hello Guruji,', '',
+    "I'd like a monthly quote for RedDoor3.", '',
+    'Name: ' + val('guestName'),
+    'Email: ' + val('guestEmail'),
+    'Phone / WhatsApp: ' + val('guestPhone'),
+    'Company: ' + (val('company') || 'Not given'), '',
+    'Move-in date: ' + val('moveIn'),
+    'Term length: ' + val('termLength'),
+    'Occupants: ' + val('occupants'),
+    'Purpose: ' + val('stayPurpose'),
+    'Tenant of record: ' + (val('tenantOfRecord') || 'Not given'), '',
+    'Anything else:',
+    val('message') || 'Nothing further'
+  ].map(encodeURIComponent).join(nl);
 }
 
 if (inquiryForm) {
   inquiryForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const subject = encodeURIComponent('RedDoor3 Inquiry');
+    const subject = encodeURIComponent('RedDoor3 monthly quote request');
     const body = buildInquiryText();
     window.location.href = `mailto:booking@reddoor3.com?subject=${subject}&body=${body}`;
   });
